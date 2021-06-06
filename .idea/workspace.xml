@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c2e51e3-6208-49ee-9400-ff2dabd12495" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../KaggleProject" />
+  </component>
+  <component name="JupyterTrust" id="1ed51e89-a4eb-409f-b9f7-faec69bdf09e" />
+  <component name="ProjectId" id="1tIg82ooRaIN2Yhall7eYhjxbce" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../KaggleProject" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager">
+    <configuration name="titanic" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="KaggleProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\82105\PycharmProjects\KaggleTitanic\titanic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c2e51e3-6208-49ee-9400-ff2dabd12495" name="Default Changelist" comment="" />
+      <created>1622461854928</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622461854928</updated>
+      <workItem from="1622461876203" duration="13100000" />
+      <workItem from="1622555159792" duration="2884000" />
+      <workItem from="1622634017216" duration="2840000" />
+      <workItem from="1622695228281" duration="4365000" />
+      <workItem from="1622862038913" duration="266000" />
+      <workItem from="1622864620898" duration="849000" />
+      <workItem from="1622887618723" duration="7176000" />
+      <workItem from="1622900147113" duration="141000" />
+      <workItem from="1622956253614" duration="749000" />
+      <workItem from="1622957588266" duration="183000" />
+      <workItem from="1622957785417" duration="529000" />
+      <workItem from="1622958327962" duration="240000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1622958552332">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1622958552332" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1622895202151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622895202151" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1622895202151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622895202151" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1622895202151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622895202151" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1622895202151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622895202151" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1622958569321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622958569321" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1622958032596">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622958032596" />
+    <state x="475" y="144" width="585" height="536" key="find.popup" timestamp="1622956311610">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="144" width="585" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1622956311610" />
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1622467539648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622467539648" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../KaggleProject/Titanic/titanic.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/KaggleTitanic$main.coverage" NAME="main Coverage Results" MODIFIED="1622894453112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
