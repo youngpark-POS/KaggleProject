@@ -3,15 +3,13 @@ Author: youngpark-POS
 Date: Jun 06 2021 up to date
 
 Kaggle - Titanic project
-Accuracy 77.5% passed
 '''
-
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
 
 import torch
+import collections
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
@@ -20,6 +18,20 @@ from torch.utils.data import Dataset, DataLoader
 max_epochs = 30
 drop_rate = 0.2
 learning_rate = 1e-4
+
+
+def detect_outlier(df, features):
+
+    outlier_indices = []
+    for col in features:
+        Q1 = np.quantile(df[col], 0.25)
+        Q3 = np.quantile(df[col], 0.75)
+        outlier_step = (Q3 - Q1) * 1.5
+        outlier_index = df[(df[col] < Q1 - outlier_step) | (df[col] > Q3 + outlier_step)].index
+        outlier_indices.extend(outlier_index)
+    multiple_outliers = [key for key, value in collections.Counter(outlier_indices).items() if value > 2]
+    return multiple_outliers
+
 
 # data preprocessing
 df_target = pd.read_csv("test.csv")
@@ -32,10 +44,13 @@ for frame in (df_all, df_target):
     for columnIdx in ("SibSp", "Parch", "Fare"):
         frame[columnIdx] = pd.Series(map(lambda x: x / max(frame[columnIdx]), frame[columnIdx]))
 
+target_outlier = detect_outlier(df_all, ["SibSp", "Parch", "Fare"])
+df_all.drop(target_outlier, inplace=True)
+df_all.reset_index(inplace=True)
+
 
 df_train = df_all.iloc[:700]
 df_test = df_all.iloc[700:]
-data_size = len(df_all["Pclass"])
 
 
 class TitanicClassifier(nn.Module):
@@ -74,10 +89,8 @@ if __name__ == '__main__':
     titanic_dataset = TitanicDataset()
     titanic_loader = DataLoader(dataset=titanic_dataset,
                                 batch_size=4,
-                                shuffle=True,
-                                num_workers=0)
+                                shuffle=True)
     model = TitanicClassifier(in_features=6)
-    model.train()
 
     optimizer = optim.Adam(params=model.parameters(), lr=learning_rate)
 
@@ -96,7 +109,6 @@ if __name__ == '__main__':
                 print(f'Epoch {epoch:2d} Iter {i:3d} Cost {cost:.6f}')
 
     with torch.no_grad():
-        model.eval()
         correctness = 0
         answer = pd.DataFrame(columns=["PassengerId", "Survived"])
         for idx, line in df_test.iterrows():
@@ -105,12 +117,12 @@ if __name__ == '__main__':
             correctness += prediction.item() == bool(line["Survived"])
         print(f"Accuracy {(correctness / len(df_test)):.4f}")
         #  generate answer
-        '''
+
         for idx, line in df_target.iterrows():
             x = torch.from_numpy(np.array(line[["Pclass", "Sex", "SibSp", "Parch", "Cabin", "Fare"]], dtype=np.float32))
             prediction = 1 if model(x) > torch.FloatTensor([0.5]) else 0
             answer = answer.append(pd.DataFrame(
                 {"PassengerId": [line["PassengerId"]], "Survived": [prediction]}))
         answer.to_csv(path_or_buf="answer.csv", index=False)
-        '''
+
 
